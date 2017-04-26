@@ -14,4 +14,12 @@ class Meta(models.Model):
     filename = models.CharField(max_length=128)
     size = models.IntegerField()
     upload_date = models.DateTimeField()
+    user = models.CharField(max_length=128)
+
+class Data(models.Model):
+    title = models.CharField(max_length=128, null=True)
+    author = models.CharField(max_length=128, null=True)
+    #publisher = models.CharField(max_length=128)
+    #publication_date = models.DateField()
+    #citations = models.IntegerField()
 
